@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof Replacement - Save $1000s</title>
+    <script src="https://talkroute.blinkrepo.in/js/t.js" data-campaign="46122c58-09fa-44d8-a5a4-96d83ed1a15d" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #c53030, #e53e3e);
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .warning-banner {
+            background: #fef5e7;
+            border: 2px solid #f6ad55;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #744210;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .warning-icon {
+            background: #f6ad55;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .main-content {
+            padding: 30px 25px;
+        }
+
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2d3748;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .cta-button {
+            width: 100%;
+            background: #e53e3e;
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 25px;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transform: scale(1);
+            animation: pulseZoom 2s ease-in-out infinite;
+        }
+
+        .cta-button:hover {
+            background: #c53030;
+            animation-play-state: paused;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+            transition: all 0.1s ease;
+        }
+
+        @keyframes pulseZoom {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(229, 62, 62, 0.2);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 8px 25px rgba(229, 62, 62, 0.4);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(229, 62, 62, 0.2);
+            }
+        }
+
+        .phone-number {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hero-image {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .overlay-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .overlay-subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #e53e3e;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .eligibility-check {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .eligibility-text {
+            color: #e53e3e;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .security-note {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .lock-icon {
+            width: 12px;
+            height: 12px;
+        }
+
+        .package-section {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .package-title {
+            color: #2f855a;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .package-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .checkmark {
+            background: #48bb78;
+            color: white;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .item-description {
+            color: #666;
+        }
+
+        .qualification-section {
+            background: #fff5f5;
+            border: 2px solid #fed7d7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .qualification-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .warning-icon-red {
+            background: #e53e3e;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .qualification-title {
+            color: #c53030;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .step-number {
+            background: #e53e3e;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 14px;
+        }
+
+        .step-description {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .selection-box {
+            background: #fef5e7;
+            border: 2px solid #f6ad55;
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #744210;
+        }
+
+        .green-selection-box {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            color: #2f855a;
+        }
+
+        .testimonials-section {
+            margin-bottom: 25px;
+        }
+
+        .testimonials-title {
+            text-align: center;
+            color: #4299e1;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials {
+            display: flex;
+            gap: 15px;
+        }
+
+        .testimonial {
+            flex: 1;
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4299e1;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .avatar-mt {
+            background: #4299e1;
+        }
+
+        .avatar-rj {
+            background: #9f7aea;
+        }
+
+        .customer-name {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 14px;
+        }
+
+        .stars {
+            color: #f6ad55;
+            font-size: 12px;
+        }
+
+        .testimonial-text {
+            font-size: 12px;
+            color: #4a5568;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            padding: 15px;
+            background: #f7fafc;
+        }
+
+        .footer a {
+            color: #4299e1;
+            text-decoration: none;
+        }
+
+        .footer-line {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="warning-banner">
+            <div class="warning-icon">⚠</div>
+            <span><strong>LIMITED TIME:</strong> Only 47 spots left today</span>
+        </div>
+
+        <div class="main-content">
+            <h1 class="main-title">Homeowners Are Saving $1000s<br>on New Roof Replacement</h1>
+            
+            <a href="tel:+18303965989" class="cta-button">
+                Call Now › <span class="phone-number tracking-number">(830) 396-5989</span>
+            </a>
+
+            <div class="hero-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pexels-curtis-adams-1694007-7601276.jpg-2jd2v1G4xyq8jdxfr3utWwr8XYSdz7.jpeg" alt="House with new roof">
+                <div class="image-overlay">
+                    <div class="overlay-title">Roof Replacement</div>
+                    <div class="overlay-subtitle">Professional Installation</div>
+                </div>
+                <div class="badge">WILLIAM & JENNIFER</div>
+            </div>
+
+            <div class="description">
+                The affordable roof replacement you'll receive<br>
+                Low monthly payments + huge savings
+            </div>
+
+            <div class="eligibility-check">
+                <div class="eligibility-text">Check Eligibility - Takes 30 Seconds!</div>
+            </div>
+
+            <a href="tel:+18303965989" class="cta-button">
+                Call Now › <span class="phone-number tracking-number">(830) 396-5989</span>
+            </a>
+
+            <div class="security-note">
+                <svg class="lock-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"/>
+                </svg>
+                Your information is secure & confidential
+            </div>
+
+            <div class="package-section">
+                <div class="package-title">What Your Roof Replacement Package Includes:</div>
+                
+                <div class="package-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <span class="item-title">Low Monthly Payments</span>
+                        <span class="item-description"> - As low as $99/month</span>
+                    </div>
+                </div>
+                
+                <div class="package-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <span class="item-title">$1000 Instant Savings</span>
+                        <span class="item-description"> - Applied to your total project cost</span>
+                    </div>
+                </div>
+                
+                <div class="package-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <span class="item-title">Premium Materials</span>
+                        <span class="item-description"> - High-quality shingles & underlayment</span>
+                    </div>
+                </div>
+                
+                <div class="package-item">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <span class="item-title">Complete Installation</span>
+                        <span class="item-description"> - Full roof removal & replacement</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qualification-section">
+                <div class="qualification-header">
+                    <div class="warning-icon-red">!</div>
+                    <div class="qualification-title">IMPORTANT: Follow These Steps to Qualify</div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Service Type Selection</div>
+                    </div>
+                    <div class="step-description">When asked about service type, you MUST select:</div>
+                    <div class="selection-box">✓ "Replace" ONLY</div>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Property Ownership</div>
+                    </div>
+                    <div class="step-description">When asked about ownership, you MUST select:</div>
+                    <div class="selection-box green-selection-box">✓ "I own my home"</div>
+                </div>
+            </div>
+
+            <div class="testimonials-section">
+                <div class="testimonials-title">What Homeowners Are Saying</div>
+                
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="avatar avatar-mt">MT</div>
+                            <div>
+                                <div class="customer-name">Margaret T.</div>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "The $99/month payment plan made this so affordable! Plus the $1000 off saved us even more. The process was so easy and the contractor was very helpful!"
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="avatar avatar-rj">RJ</div>
+                            <div>
+                                <div class="customer-name">Robert J.</div>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "I couldn't believe how affordable the monthly payments were! The $1000 discount was a huge bonus. Now I have a brand new roof without breaking the bank!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="tel:+18303965989" class="cta-button">
+                Call Now › <span class="phone-number tracking-number">(830) 396-5989</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <div class="footer-line">By clicking "Call Now", you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</div>
+            <div class="footer-line">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</div>
+            <div>© 2024 RoofPro. All rights reserved. Licensed, Bonded & Insured.</div>
+        </div>
+    </div>
+</body>
+</html>
